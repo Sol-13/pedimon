@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+body {
+  font-family: "Play", sans-serif;
+}
+nav {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-right: 250px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav div {
+  margin: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.alinearIzq {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 680px;
+  font-size: 20px;
+}
+
+.encabezado {
+  background-color: #f9ae69;
+  height: 450px;
+  width: auto;
+}
+
+.parrafito {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 60px;
+}
+
+.crece {
+  width: 800px;
+  height: 350px;
+}
+
+.principal {
+  background-color: #8cdebb;
+  width: auto;
+  height: 1300px;
+}
+
+.colorSeccion {
+  background-color: #eefdfb;
+  margin: 50px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.carta {
+  width: 200px;
+  margin-left: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enLinea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.piedepagina {
+  background-color: #f9ae69;
+}
+
+header main footer {
+  margin: 0px;
+}
