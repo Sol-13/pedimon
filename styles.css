@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Play", sans-serif;
 }
 nav {
@@ -33,7 +36,19 @@ a {
 }
 
 .encabezado {
-  background-color: #f9ae69;
+  /*background-color: #f9ae69;*/
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 450px;
   width: auto;
 }
@@ -50,7 +65,19 @@ a {
 }
 
 .principal {
-  background-color: #8cdebb;
+  /*background-color: #8cdebb;*/
+  background: #4ac29a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bdfff3,
+    #4ac29a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bdfff3,
+    #4ac29a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   width: auto;
   height: 1300px;
 }
@@ -64,6 +91,7 @@ a {
 
 .grid {
   display: grid;
+  grid-auto-flow: row;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
@@ -88,9 +116,49 @@ a {
 }
 
 .piedepagina {
-  background-color: #f9ae69;
+  /*background-color: #f9ae69;*/
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header main footer {
   margin: 0px;
+}
+
+/*Resolver mejor lo de las @media*/
+@media all and (max-width: 1200px) {
+  .responsive,
+  .grid {
+    display: inline-block;
+    padding: 0px 6px;
+    margin: 0px 4px;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .responsive,
+  .grid {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5%;
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .responsive,
+  .grid {
+    padding-left: 20%;
+  }
 }
